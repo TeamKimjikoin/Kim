@@ -149,13 +149,13 @@ def pingall(update: Update, context: CallbackContext):
     )
 
 
-PING_HANDLER = DisableAbleCommandHandler("ping", ping, run_async=True)
+PING_HANDLER = DisableAbleCommandHandler("agora", ping, run_async=True)
 PINGALL_HANDLER = DisableAbleCommandHandler("pingall", pingall, run_async=True)
 
 dispatcher.add_handler(PING_HANDLER)
 dispatcher.add_handler(PINGALL_HANDLER)
 
-__command_list__ = ["ping", "pingall"]
+__command_list__ = ["agora", "pingall"]
 __handlers__ = [PING_HANDLER, PINGALL_HANDLER]
 
 
